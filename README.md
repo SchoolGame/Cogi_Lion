@@ -2,7 +2,10 @@
 1. Git 단기습득
 2. 코드 단일화
 ---
+Git의 가벼운 부분만 팀원이 이해하면 좋겠다는 생각에 정리해 봅니다
 # Git 단기습득
+#####리모트 저장소
+리모트 저장소는 인터넷이나 네트워크 어딘가에 있는 저장소를 말한다 간단히 말해서 다른 사람들과 함께 일한다는 것은 리모트 저장소를 관리하면서 데이터를 거기에 Push하고 Pull하는 것이다
 
 - git init - **현재 디렉터리에 Git 저장소를 만든다**
 
@@ -14,7 +17,7 @@
   On branch master
   nothing to commit, working directory clean
 
-- git status - **코드를 수정하거나 파일을 만들었을 경우** 실행하면 아래와 같은 문장을 볼 수 있다
+- git status - **README 라는 코드를 수정하거나 파일을 만들었을 경우** 실행하면 아래와 같은 문장을 볼 수 있다
 
   >$ git status
   On branch master
@@ -24,6 +27,7 @@
       README
 
 - git add (파일명) - **파일 추적하기 및 Staged 상태 만들기**
+
   >$ git add README
 
 - git status - **파일을 추적 및 Staged 상태로 만들었을 경우** 실행하면 아래와 같은 문장을 볼 수 있다
@@ -35,4 +39,20 @@
 
       new file:   README
 
-- git commit **-m**(넣어도 되고 빼도 된다) - **변경사항 커밋하기** Unstaged 상태의 파일은 커밋되지 않는다는 것을 기억해야 한다. git add 명령으로 추가하지 않은 파일은 커밋하지 않는다. 커밋하기 전에 git status 명령으로 모든 것이 Staged 상태인지 확인할 수 있다. 그리고 git commit을 실행하여 커밋한다.
+- git commit **-m** "간략한 커밋에 대한 메시지" - **변경사항 커밋하기** Unstaged 상태의 파일은 **커밋되지 않는다는 것**을 기억해야 하며
+**커밋하기 전에 git status 명령으로 모든 파일이 Staged 상태인지 확인 후** git commit으로 커밋한다.
+
+  >$ git commit -m "Test"
+
+- git push origin master - 팀원들에게 파일을 공유하고 싶을 때 위 와 같이 실행하면 **리모트 저장소에 Push 할 수 있다** 이 명령은 git push [리모트 저장소 이름] [브랜치 이름]으로 간단하며 **git push origin master의 경우 특정 리모트 저장소로 푸시하고 있음을 나타낸다.**
+(Clone 하면 보통 자동으로 origin 이름이 생성된다)
+
+  >$ git push origin master
+
+- git push - 위 에 쓰였던 git push origin master와 비슷하지만 차이는 분명하다 git push는 해당 브랜치에 정의 된 리모트 저장소 가 이미 있다고 가정을 하고 **기본 리모트 저장소 즉 origin이 사용이 된다** (Clone 하면 보통 자동으로 origin 이름이 생성된다)
+
+  >$ git push
+
+#####i.e. - 여러 개의 리모트 저장소를 만든 경우에만 유의미합니다 단지 하나의 저장소에만 커밋하는 경우 그 둘 사이에는 어떠한 차이도 없습니다
+
+- git-pull - **다른 저장소 또는 로컬 브랜치에서 데이터를 가져 와서 통합한다** 
