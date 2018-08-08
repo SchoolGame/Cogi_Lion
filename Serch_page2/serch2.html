@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>forpet</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
   <link href="carousel.css" rel="stylesheet">
 </head>
@@ -31,8 +32,10 @@
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 " type="submit" onclick="alert('검색결과가 없습니다')">
+            <i class="fa fa-search fa-lg"></i>
+          </button>
         </form>
       </div>
     </nav>
