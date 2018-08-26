@@ -1,0 +1,114 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLCollaboration",
+					"_id": "AAAAAAFldnIqrgE/Lzo=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Collaboration1",
+					"ownedElements": [
+						{
+							"_type": "UMLInteraction",
+							"_id": "AAAAAAFldnIqrgFAU5Q=",
+							"_parent": {
+								"$ref": "AAAAAAFldnIqrgE/Lzo="
+							},
+							"name": "Interaction1",
+							"ownedElements": [
+								{
+									"_type": "UMLSequenceDiagram",
+									"_id": "AAAAAAFldnIqrgFBm+c=",
+									"_parent": {
+										"$ref": "AAAAAAFldnIqrgFAU5Q="
+									},
+									"name": "SequenceDiagram1",
+									"ownedViews": [
+										{
+											"_type": "UMLFrameView",
+											"_id": "AAAAAAFldnIqrgFCLCo=",
+											"_parent": {
+												"$ref": "AAAAAAFldnIqrgFBm+c="
+											},
+											"model": {
+												"$ref": "AAAAAAFldnIqrgFBm+c="
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFldnIqrgFDUZw=",
+													"_parent": {
+														"$ref": "AAAAAAFldnIqrgFCLCo="
+													},
+													"font": "Arial;13;0",
+													"left": 70.97900390625,
+													"top": 5,
+													"width": 115.9052734375,
+													"height": 13,
+													"text": "SequenceDiagram1"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFldnIqrgFE404=",
+													"_parent": {
+														"$ref": "AAAAAAFldnIqrgFCLCo="
+													},
+													"font": "Arial;13;1",
+													"left": 5,
+													"top": 5,
+													"width": 60.97900390625,
+													"height": 13,
+													"text": "interaction"
+												}
+											],
+											"font": "Arial;13;0",
+											"width": 695,
+											"height": 595,
+											"nameLabel": {
+												"$ref": "AAAAAAFldnIqrgFDUZw="
+											},
+											"frameTypeLabel": {
+												"$ref": "AAAAAAFldnIqrgFE404="
+											}
+										}
+									]
+								}
+							]
+						}
+					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFldnLs4QFQqjM=",
+							"_parent": {
+								"$ref": "AAAAAAFldnIqrgE/Lzo="
+							},
+							"name": "Role1",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFldnL++gFwAp8=",
+							"_parent": {
+								"$ref": "AAAAAAFldnIqrgE/Lzo="
+							},
+							"name": "Role2",
+							"type": ""
+						}
+					]
+				}
+			]
+		}
+	]
+}
